@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://brew-heave-your-coffee-oasis.vercel.app/sitemap.xml
