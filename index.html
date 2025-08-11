@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Brew Haven - Your Coffee Oasis</title>
-    <script src="script.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Brew Haven - Premium Coffee, Muffins, Cookies & Donuts</title>
+    <meta name="description" content="Brew Haven offers premium coffee blends, muffins, cookies, and donuts. Experience rich flavors and cozy vibes at your favorite coffee oasis.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://brew-heave-your-coffee-oasis.vercel.app/">
+    
+<!-- <script src="script.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-874S1R5KXC"></script>
     <script>
@@ -11,7 +17,16 @@
       gtag('js', new Date());
     
       gtag('config', 'G-874S1R5KXC');
+    </script> -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-874S1R5KXC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-874S1R5KXC');
     </script>
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -677,7 +692,7 @@
 </head>
 <body class="desc">
     
-    <!-- Welcome Pop-up -->
+<!--     <!-- Welcome Pop-up -->
     <div class="welcome-popup" id="welcomePopup">
         <div class="popup-content">
             <h2>Welcome to Brew Heaven</h2>
@@ -685,6 +700,15 @@
             <p>At Brew Heaven, we are passionate about coffee and dedicated to providing you with the finest blends from around the world.</p>
             <p>Explore our collection of premium coffee beans, carefully sourced and expertly roasted to perfection.</p>
             <p>Join our community of coffee enthusiasts and embark on a journey of flavor, aroma, and discovery.</p>
+            <button onclick="closeWelcomePopup()">Continue</button>
+        </div>
+    </div> -->
+
+    <!-- Welcome Pop-up -->
+    <div class="welcome-popup" id="welcomePopup">
+        <div class="popup-content">
+            <h2>Welcome to Brew Haven</h2>
+            <p>Discover exceptional coffee blends, muffins, cookies, and donuts at Brew Haven – your coffee oasis.</p>
             <button onclick="closeWelcomePopup()">Continue</button>
         </div>
     </div>
@@ -1255,3 +1279,4 @@ document.querySelectorAll('.add-to-cart-button').forEach((button, index) => {
 </body>
 
 </html>
+
