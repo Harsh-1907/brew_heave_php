@@ -1,0 +1,666 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+/* Basic Styles */
+body {
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* Base colors for different sections */
+body.desc {
+    background-color: #FEBF84;
+    color: brown;
+}
+
+body.contact {
+    background-color: #66A5AD;
+    color: white;
+}
+
+body.reviews {
+    background-color: #F4F4F4;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Typography */
+h {
+    font-size: 75px;
+    font-weight: 1000;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h1 {
+    font-size: 75px;
+    margin-top: 15px;
+    text-align: left;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 75px;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+p {
+    font-family: 'Yanone kaffeesatz', sans-serif;
+    font-size: 22px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    position: relative;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 60px;
+    max-width: 25%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+nav {
+    display: flex;
+    margin-left: 20px;
+    padding-left: 20px;
+    height: 35px;
+    border-left: 1.5px solid beige;
+}
+
+nav a {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-decoration: none;
+    color: beige;
+    margin: 0 18px;
+    font-size: 27px;
+}
+
+nav a:hover {
+    background-color: #d8d8d86c;
+    transition: all .4s ease;
+    border-radius: 4px;
+    transform: scale(1.15);
+    padding: 5px 10px;
+}
+
+/* Welcome Pop-up */
+.welcome-popup {
+    position: fixed;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.popup-content {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+}
+
+.popup-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.popup-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.popup-content button {
+    padding: 15px 30px;
+    background-color: #222;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.popup-content button:hover {
+    background-color: burlywood;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Home Section */
+#home {
+    background-color: #222;
+    text-align: center;
+    color: beige;
+    padding: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: -120px;
+    transform: scale(1.1) translateY(-20px);
+}
+
+.animated-button {
+    padding: 12px 24px;
+    background-color: beige;
+    color: #222;
+    border: 8px solid #222;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: burlywood;
+    border-color: #ffffff;
+    transform: scale(1.15);
+}
+
+/* Product Section */
+#products h2 {
+    text-align: center;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+#products p {
+    text-align: center;
+    font-size: 35px;
+}
+
+#coffee-products {
+    background-color: #FFF7EB;
+    padding: 20px;
+}
+
+#muffin-products {
+    background-color: #FFEEDD;
+    padding: 20px;
+}
+
+#cookie-products {
+    background-color: #FFD8C8;
+    padding: 20px;
+}
+
+#donut-products {
+    background-color: #e8b5b5;
+    padding: 20px;
+}
+
+.product-section {
+    margin-bottom: 50px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-15px);
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+
+.product-card h2,
+.product-card p,
+.product-card .price,
+.product-card button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product-card button:hover {
+    background-color: #d5baba;
+}
+
+.product-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#coffeeBtn,
+#muffinsBtn,
+#cookiesBtn,
+#donutsBtn {
+    font-size: 30px;
+    font-family: 'Yanone kaffeesatz', sans-serif;
+    padding: 16px 25px;
+    margin: 5px;
+    border: 1px solid #32281e;
+    border-radius: 5px;
+    background-color: beige;
+    color: #222;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+#coffeeBtn:hover,
+#muffinsBtn:hover,
+#cookiesBtn:hover,
+#donutsBtn:hover {
+    background-color: #e4c7c7;
+    transform: scale(1.15);
+}
+
+/* About Section */
+.about-section {
+    background-color: #222;
+    padding: 50px;
+}
+
+.about-section h1 {
+    text-align: center;
+    font-family: 'Yanone kaffeesatz', sans-serif;
+    font-size: 65px;
+    text-decoration: underline;
+    color: beige;
+}
+
+.about-section p {
+    font-family: 'Yanone kaffeesatz', sans-serif;
+    font-size: 25px;
+    color: beige;
+}
+
+.about-section button {
+    background-color: #767474;
+    color: beige;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: block;
+    margin: 0 auto;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.about-section button:hover {
+    border: 4px solid #ffffff;
+    border-width: 3px;
+    transform: scale(1.12);
+}
+
+/* Reviews Section */
+.reviews-section {
+    background-color: #f4f4f4;
+    padding: 100px;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.reviews-section h1 {
+    text-align: center;
+    font-size: 65px;
+}
+
+.reviews-section h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.review {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.person {
+    text-align: center;
+}
+
+.person p {
+    text-align: center;
+}
+
+.person img {
+    max-width: 75px;
+    border-radius: 50%;
+}
+
+.review-text {
+    max-width: 60%;
+}
+
+.additional-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.item {
+    text-align: center;
+    margin: 25px;
+    max-width: 200px;
+}
+
+.item h1 {
+    font-family: 'Yanone kaffeesatz', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.item:hover h1 {
+    transform: scale(1.2);
+}
+
+.item p {
+    font-family: 'Yanone kaffeesatz', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500px;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.item:hover p {
+    transform: scale(1.6);
+}
+
+/* Contact Section */
+section.contact {
+    background-color: #393535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.left-side {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.left-side h1 {
+    color: beige;
+    text-align: center;
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.left-side h2 {
+    color: beige;
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact-item h3 {
+    color: beige;
+    text-align: left;
+    font-size: 22px;
+    margin: 0;
+}
+
+.contact-item p {
+    color: beige;
+    text-align: left;
+    font-size: 18px;
+    margin: 0;
+}
+
+.follow-us {
+    color: beige;
+    font-weight: 750px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.follow-us p {
+    font-size: 35px;
+    text-align: left;
+}
+
+.social-icons img {
+    padding: auto;
+    width: auto;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.5);
+}
+
+.right-side {
+    flex: 1;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    color: beige;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: 'Yanone kaffeesatz', sans-serif;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    display: block;
+    background-color: beige;
+    color: #222;
+    border: 4px solid beige;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: burlywood;
+    border-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.rating-container {
+    display: flex;
+}
+
+.rating-container input {
+    display: none;
+}
+
+.rating-container label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rating-container label:before {
+    content: '\2605';
+    margin: 0 5px;
+}
+
+.rating-container input:checked~label:before {
+    color: gold;
+}
+
+/* Footer */
+.site-footer {
+    background-color: rgba(247, 247, 246, 0.768);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-widgets {
+    display: flex;
+    gap: 300px;
+}
+
+.widget {
+    flex: 1;
+}
+
+.copyright-info {
+    text-align: center;
+}
+
+.widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.widget ul li {
+    margin-bottom: 8px;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline;
+}
+
+.widget ul li a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-info p {
+    font-size: medium;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-info p:hover {
+    transform: scale(1.1);
+}
