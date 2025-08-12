@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Brew Haven - Premium Coffee, Muffins, Cookies & Donuts</title>
+    <meta name="description" content="Brew Haven offers premium coffee blends, muffins, cookies, and donuts. Experience rich flavors and cozy vibes at your favorite coffee oasis.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://brew-heave-your-coffee-oasis.vercel.app/">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-874S1R5KXC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-874S1R5KXC');
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://harsh-1907.github.io/Brew-Heave-Your-Coffee-Oasis/logoo.png">
+</head>
+<body class="desc">
+
+    <!-- Welcome Pop-up -->
+    <div class="welcome-popup" id="welcomePopup">
+        <div class="popup-content">
+            <h2>Welcome to Brew Haven</h2>
+            <p>Discover exceptional coffee blends, muffins, cookies, and donuts at Brew Haven – your coffee oasis.</p>
+            <button onclick="closeWelcomePopup()">Continue</button>
+        </div>
+    </div>
+
+    <div class="website-content">
+        <header>
+            <img src="logoo.png" alt="Brew Haven Logo" class="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" style="background-color: #222; text-align: center; padding: 100px; color: beige; position: relative;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="max-width: 100%; text-align: left; margin-top: -50px;">
+                <p style="text-align: left;">Brewing Connections, One Cup at a Time</p>
+                <h1>Awaken Your Senses,<br>Start Fresh with our Coffee</h1>
+                <button class="animated-button">Buy Now</button>
+            </div>
+            <div>
+                <img src="homepage.png" alt="Coffee Image">
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="widget">
+                    <h3><u>Explore</u></h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3><u>Connect</u></h3>
+                    <ul>
+                        <li><a href="#" id="newsletter">Subscribe to Newsletter</a></li>
+                        <li><a href="#" id="social-media">Follow Us on Social Media</a></li>
+                        <li><a href="#" id="events">Coffee Events Calendar</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3><u>Shop</u></h3>
+                    <ul>
+                        <li><a href="#">Coffee Subscriptions</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Brewing Equipment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2023 Brew Heaven. All rights reserved.</p>
+                <div class="copyright-info">
+                    <p>Designed and Developed with ❤️ by Brew Heaven</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
