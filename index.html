@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="UTF-8">
     <title>Brew Haven - Premium Coffee, Muffins, Cookies & Donuts</title>
     <meta name="description" content="Brew Haven offers premium coffee blends, muffins, cookies, and donuts. Experience rich flavors and cozy vibes at your favorite coffee oasis.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://brew-heave-your-coffee-oasis.vercel.app/">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-874S1R5KXC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-874S1R5KXC');
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://harsh-1907.github.io/Brew-Heave-Your-Coffee-Oasis/logoo.png">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-874S1R5KXC"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-874S1R5KXC');
-    </script>
-    <script src="script.js" defer></script>
 </head>
 <body class="desc">
 
@@ -33,551 +35,68 @@
 
     <div class="website-content">
         <header>
-            <img src="logoo.png"Brew Haven Logo" class="logo">
+            <img src="logoo.png" alt="Brew Haven Logo" class="logo">
             <nav>
-                <a href="#home"><u>Home</u></a>
-                <a href="#products"><u>Products</u></a>
-                <a href="#about"><u>About </u></a>
-                <a href="#contact"><u>Contact Us</u></a>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
             </nav>
         </header>
     </div>
 
     <!-- Home Section -->
-<section id="home" style="background-color: #222; text-align: center; padding: 100px; color: beige; position: relative;">
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-        <div style="max-width: 100%; text-align: left;margin-top: -50px;">
-            <p style="text-align: left;">Brewing Connections, One Cup at a Time</p>
-            <h1>Awaken Your Senses,<br>Start Fresh with our Coffee</h1>
-            <button class="animated-button">Buy Now</button>
+    <section id="home" style="background-color: #222; text-align: center; padding: 100px; color: beige; position: relative;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="max-width: 100%; text-align: left; margin-top: -50px;">
+                <p style="text-align: left;">Brewing Connections, One Cup at a Time</p>
+                <h1>Awaken Your Senses,<br>Start Fresh with our Coffee</h1>
+                <button class="animated-button">Buy Now</button>
+            </div>
+            <div>
+                <img src="homepage.png" alt="Coffee Image">
+            </div>
         </div>
-        <div>
-            <img src="homepage.png" alt="Coffee Image">
-        </div>
-    </div>
-</section><br><br><br>
-
-    <!-- Products Section -->
-<section id="products">
-    <h2 style="text-align: center;font-size: 60px;text-decoration: underline;">• Discover Our Wide Variety of Products •</h2><br>
-    <p style="text-align: center;font-size: 35px;">Explore our diverse range of meticulously crafted coffee blends and complementary offerings.</p><br><br><br>
-
-    <!-- Inline row method for buttons -->
-    <div style="display: flex; justify-content: center;">
-        <button id="coffeeBtn">Coffee</button>
-        <button id="muffinsBtn">Muffins</button>
-        <button id="cookiesBtn">Cookies</button>
-        <button id="donutsBtn">Donuts</button>
-    </div><br><br>
-    
-<!-- Coffee Products -->
-<section class="product-section" id="coffee-products">
-    <h>Coffee Products</h><br><br><br>
-    <div class="product-container">
-        
-        <!-- Coffee Product 1 -->
-    
-        <div class="product-card">
-            <img src="coffee1.jpg" alt="Morning Glory Blend" class="product-image">
-            <h2>Morning Glory Blend</h2>
-            <p class="price">£10.99</p>
-            <p>A balanced blend of Colombian and Ethiopian beans, delivering a smooth and vibrant flavor with notes of chocolate and citrus.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Coffee Product 2 -->
-        <div class="product-card">
-            <img src="coffee2.jpg" alt="Sumatra Dark Roast" class="product-image">
-            <h2>Sumatra Dark Roast</h2>
-            <p class="price">£12.99</p>
-            <p>An intense and bold single-origin coffee from Sumatra, boasting deep, earthy flavors with hints of cedar and dark chocolate.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Coffee Product 3 -->
-        <div class="product-card">
-            <img src="coffee3.jpg" alt="Velvet Sunrise Espresso" class="product-image">
-            <h2>Velvet Sunrise Espresso</h2>
-            <p class="price">£8.49</p>
-            <p>Crafted from a blend of South American beans, this espresso offers a rich, velvety texture with caramel undertones and a hint of spice.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Coffee Product 4 -->
-        <div class="product-card">
-            <img src="coffee4.jpg" alt="Ethiopian Yirgacheffe" class="product-image">
-            <h2>Ethiopian Yirgacheffe</h2>
-            <p class="price">£14.49</p>
-            <p>This single-origin coffee features bright acidity, floral aromas, and fruity notes, with a distinct profile of blueberry and jasmine.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Coffee Product 5 -->
-        <div class="product-card">
-            <img src="coffee5.jpg" alt="Decaf Delight Blend" class="product-image">
-            <h2>Decaf Delight Blend</h2>
-            <p class="price">£11.99</p>
-            <p>A blend of decaffeinated beans from Central and South America, providing a mellow and full-bodied taste with hints of caramel and almonds.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Coffee Product 6 -->
-        <div class="product-card">
-            <img src="coffee6.jpg" alt="Brazilian Santos" class="product-image">
-            <h2>Brazilian Santos</h2>
-            <p class="price">£9.99</p>
-            <p>Crafted from a blend of South American beans, this espresso offers a rich, velvety texture with caramel undertones and a hint of spice.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Coffee Product 7 -->
-        <div class="product-card">
-            <img src="coffee7.jpg" alt="Costa Rican Tarrazu" class="product-image">
-            <h2>Costa Rican Tarrazu</h2>
-            <p class="price">£13.99</p>
-            <p>From the renowned Tarrazu region, this coffee boasts bright acidity, a clean profile, and flavors of citrus and honey.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Coffee Product 8 -->
-        <div class="product-card">
-            <img src="coffee8.jpg" alt="Guatemalan Antigua" class="product-image">
-            <h2>Guatemalan Antigua</h2>
-            <p class="price">£10.49</p>
-            <p>A medium-bodied coffee with a bright acidity, displaying flavors of cocoa, caramel, and a hint of spice, sourced from the Antigua region.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Coffee Product 9 -->
-        <div class="product-card">
-            <img src="coffee9.jpg" alt="Hawaiian Kona Reserve" class="product-image">
-            <h2>Hawaiian Kona Reserve</h2>
-            <p class="price">£29.99</p>
-            <p>An exclusive blend of Hawaiian Kona beans, characterized by a smooth, velvety body and a complex flavor profile with notes of tropical fruits.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-</section>
-
-<!-- Muffins Products -->
-<section class="product-section" id="muffin-products">
-    <h>Muffin Products</h><br><br><br>
-    <div class="product-container">
-        <!-- Muffin Product 1 -->
-        <div class="product-card">
-            <img src="muffins1.jpg" alt="Blueberry Bliss Muffin" class="product-image">
-            <h2>Blueberry Bliss Muffin</h2>
-            <p class="price">£2.99</p>
-            <p>A delightful blend of fresh blueberries baked into a fluffy muffin.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Muffin Product 2 -->
-        <div class="product-card">
-            <img src="muffins2.jpg" alt="Strawberry Cinnamon Comfort Muffin" class="product-image">
-            <h2>Strawberry Cinnamon Comfort Muffin</h2>
-            <p class="price">£3.29</p>
-            <p>Fall in love with the cozy combination of fresh strawberry and warm cinnamon spices.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Muffin Product 3 -->
-        <div class="product-card">
-            <img src="muffins3.jpg" alt="Pumpkin Spice Pleasure Muffin" class="product-image">
-            <h2>Pumpkin Spice Pleasure Muffin</h2>
-            <p class="price">£3.99</p>
-            <p>Embrace the autumn season with the comforting taste of pumpkin and a hint of spice.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Muffin Product 4 -->
-        <div class="product-card">
-            <img src="muffins4.jpg" alt="Cranberry Orange Burst Muffin" class="product-image">
-            <h2>Cranberry Orange Burst Muffin</h2>
-            <p class="price">£3.49</p>
-            <p>A burst of flavors with sweet cranberries and citrusy orange zest in a soft muffin.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Muffin Product 5 -->
-        <div class="product-card">
-            <img src="muffins5.jpg" alt="Double Chocolate Decadence Muffin" class="product-image">
-            <h2>Double Chocolate Decadence Muffin</h2>
-            <p class="price">£3.99</p>
-            <p>A chocolate lover's dream with a double dose of rich cocoa and chocolate chunks.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Muffin Product 6 -->
-        <div class="product-card">
-            <img src="muffins6.jpg" alt="Banana Nut Bliss Muffin" class="product-image">
-            <h2>Banana Nut Bliss Muffin</h2>
-            <p class="price">£3.29</p>
-            <p>Experience the nutty delight of ripe bananas and chopped walnuts in every bite.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Muffin Product 7 -->
-        <div class="product-card">
-            <img src="muffins7.jpg" alt="Chocolate Chip Delight Muffin" class="product-image">
-            <h2>Chocolate Chip Delight Muffin</h2>
-            <p class="price">£3.49</p>
-            <p>Indulge in the rich goodness of chocolate chips scattered throughout a moist muffin.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Muffin Product 8 -->
-        <div class="product-card">
-            <img src="muffins8.jpg" alt="Lemon Poppyseed Perfection Muffin" class="product-image">
-            <h2>Lemon Poppyseed Perfection Muffin</h2>
-            <p class="price">£3.99</p>
-            <p>A zesty treat featuring the perfect balance of tangy lemon and crunchy poppyseeds.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-</section>
-
-<!-- Cookies Products -->
-<section class="product-section" id="cookie-products">
-    <h>Cookie Products</h><br><br><br>
-    <div class="product-container">
-        <!-- Cookie Product 1 -->
-        <div class="product-card">
-            <img src="cookies1.jpg" alt="Classic Chocolate Chip Cookie" class="product-image">
-            <h2>Classic Chocolate Chip Cookie</h2>
-            <p class="price">£1.99</p>
-            <p>A timeless favorite with generous chocolate chips in a perfectly chewy cookie.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Cookie Product 2 -->
-        <div class="product-card">
-            <img src="cookies2.jpg" alt="Double Espresso Delight Cookie" class="product-image">
-            <h2>Double Espresso Delight Cookie</h2>
-            <p class="price">£2.59</p>
-            <p>Get a coffee kick with the rich taste of double espresso infused in a delightful cookie.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Cookie Product 3 -->
-        <div class="product-card">
-            <img src="cookies3.jpg" alt="White Chocolate Macadamia Nut Cookie" class="product-image">
-            <h2>White Chocolate Macadamia Nut Cookie</h2>
-            <p class="price">£2.49</p>
-            <p>Indulge in the rich combination of creamy white chocolate and crunchy macadamia nuts.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Cookie Product 4 -->
-        <div class="product-card">
-            <img src="cookies4.jpg" alt="Mint Chocolate Chip Delight Cookie" class="product-image">
-            <h2>Mint Chocolate Chip Delight Cookie</h2>
-            <p class="price">£2.49</p>
-            <p>Refresh your taste buds with the perfect blend of mint and chocolate chips.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Cookie Product 5 -->
-        <div class="product-card">
-            <img src="cookies5.jpg" alt="Snickerdoodle Sensation Cookie" class="product-image">
-            <h2>Snickerdoodle Sensation Cookie</h2>
-            <p class="price">£2.29</p>
-            <p>Cinnamon and sugar goodness in every bite, creating a delightful snickerdoodle experience.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Cookie Product 6 -->
-        <div class="product-card">
-            <img src="cookies6.jpg" alt="Peanut Butter Bliss Cookie" class="product-image">
-            <h2>Peanut Butter Bliss Cookie</h2>
-            <p class="price">£2.19</p>
-            <p>Experience the nutty delight of peanut butter in a soft and chewy cookie.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Cookie Product 7 -->
-        <div class="product-card">
-            <img src="cookies7.jpg" alt="Almond Joyful Cookie" class="product-image">
-            <h2>Almond Joyful Cookie</h2>
-            <p class="price">£2.39</p>
-            <p>Escape to paradise with the tropical flavors of coconut, almonds, and chocolate.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Cookie Product 8 -->
-        <div class="product-card">
-            <img src="cookies8.jpg" alt="Oatmeal Raisin Delight Cookie" class="product-image">
-            <h2>Oatmeal Raisin Delight Cookie</h2>
-            <p class="price">£2.29</p>
-            <p>Enjoy the wholesome goodness of oats and plump raisins in a soft-baked cookie.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-</section>
-
-<!-- Donuts Products -->
-<section class="product-section" id="donut-products">
-    <h>Donut Products</h><br><br><br>
-    <div class="product-container">
-        <!-- Donut Product 1 -->
-        <div class="product-card">
-            <img src="donuts'1.jpg" alt="Classic Glazed Ring Donut" class="product-image">
-            <h2>Classic Glazed Ring Donut</h2>
-            <p class="price">£1.49</p>
-            <p>A traditional favorite with a golden brown exterior and a sweet, glossy glaze.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Donut Product 2 -->
-        <div class="product-card">
-            <img src="donuts'2.jpg" alt="Chocolate Fudge Heaven Donut" class="product-image">
-            <h2>Chocolate Fudge Heaven Donut</h2>
-            <p class="price">£2.29</p>
-            <p>Chocoholic's delight with a rich chocolate fudge coating on a soft donut.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Donut Product 3 -->
-        <div class="product-card">
-            <img src="donuts'3.png" alt="Blueberry Burst Ring Donut" class="product-image">
-            <h2>Blueberry Burst Ring Donut</h2>
-            <p class="price">£1.89</p>
-            <p>Indulge in the burst of flavor with sweet blueberry glaze on a perfectly fried ring donut.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Donut Product 4 -->
-        <div class="product-card">
-            <img src="donuts'4.png" alt="Maple Bacon Bliss Donut" class="product-image">
-            <h2>Maple Bacon Bliss Donut</h2>
-            <p class="price">£1.99</p>
-            <p>Indulge in the perfect balance of sweet maple syrup and savory bacon on a fluffy donut.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-       
-        <!-- Donut Product 5 -->
-        <div class="product-card">
-            <img src="donuts'5.png" alt="Caramel Crunch Ring Donut" class="product-image">
-            <h2>Caramel Crunch Ring Donut</h2>
-            <p class="price">£2.09</p>
-            <p>Experience the sweet and crunchy delight of caramel drizzle on a classic ring donut.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-
-        <!-- Donut Product 6 -->
-        <div class="product-card">
-            <img src="donuts'6.png" alt="Strawberry Sprinkle Delight Donut" class="product-image">
-            <h2>Strawberry Sprinkle Delight Donut</h2>
-            <p class="price">£1.79</p>
-            <p>Enjoy the fruity goodness of strawberry glaze topped with colorful sprinkles.</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-</section>
-
-    <!----------------------------About Us Section--------------------------------->
-
-    <section id="about" class="about-section">
-        <h1>About Brew Heaven</h1>
-        <p>
-            Founded on the love for exceptional coffee, Brew Heaven opened its doors in 2023. Our mission is simple: to create a haven where coffee enthusiasts and newcomers alike gather to savor outstanding brews and meaningful connections.
-        </p>
-        <p>
-            At Brew Heaven, we believe in the artistry of coffee-making, combining the finest beans, expert craftsmanship, and a passion for perfection. Our commitment to quality extends from the coffee beans we source to the carefully designed spaces where you enjoy our brews.
-        </p>
-        <p>
-            Step into Brew Heaven and experience a world where every cup tells a story. From the aromatic blends that awaken your senses to the cozy ambiance that invites conversation, we strive to make every visit a memorable journey for our patrons.
-        </p>
-        <p>
-            Join us in celebrating the rich tapestry of coffee culture. Whether you're seeking a quiet spot for reflection, engaging in spirited conversations, or simply enjoying a moment of solitude, Brew Heaven is your destination for exceptional coffee experiences.
-        </p>
-        <!-- Initially to hide the additional description -->
-        <div id="additional-description" style="display: none;">
-            <p>
-                Our commitment to excellence extends beyond our beverages. We also offer a delectable selection of pastries, sandwiches, and desserts, meticulously crafted to complement our coffee offerings. From freshly baked muffins to indulgent cookies, there's something to satisfy every craving at Brew Heaven.
-            </p>
-            <p>
-                In addition to our menu offerings, Brew Heaven is a hub for community engagement and cultural exchange. We host regular events such as live music performances, art exhibitions, and coffee tasting sessions, providing our patrons with enriching experiences that go beyond the ordinary.
-            </p>
-        </div>
-        <!-- Button to toggle visibility of additional description -->
-        <button id="read-more-btn">Read More</button>
     </section>
-    <!-------------------------------------------Reviews Section------------------------------>
 
-    <body class="reviews">
-        <section class="reviews-section">
-            <h1>Customer Stories: Brewing Happiness at Brew Haven</h1>
-            <h2>Discover What Our Guests Say About Their Brew Heaven Experience</h2>
-            <br><br><br><br>
-            <!-- Left Review -->
-            <div class="review">
-                <div class="person">
-                    <img src="sarah.t.jpg" alt="Sarah's Face">
-                    <p>Sarah T.</p>
-                    <p>⭐⭐⭐⭐⭐</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="widget">
+                    <h3><u>Explore</u></h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
                 </div>
-                <p class="review-text">Brew Heaven's cozy ambiance and delightful Morning Glory Blend made it my new favorite spot for a perfect cup of coffee. The friendly and knowledgeable baristas ensure a great experience every visit.</p>
-            </div><br><br>
+                <div class="widget">
+                    <h3><u>Connect</u></h3>
+                    <ul>
+                        <li><a href="#" id="newsletter">Subscribe to Newsletter</a></li>
+                        <li><a href="#" id="social-media">Follow Us on Social Media</a></li>
+                        <li><a href="#" id="events">Coffee Events Calendar</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3><u>Shop</u></h3>
+                    <ul>
+                        <li><a href="#">Coffee Subscriptions</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Brewing Equipment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2023 Brew Heaven. All rights reserved.</p>
+                <div class="copyright-info">
+                    <p>Designed and Developed with ❤️ by Brew Heaven</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     
-            <!---------------------------------------Right Review------------------------------------------>
-            <div class="review">
-                <div class="person">
-                    <img src="john.d.jpg" alt="John's Face">
-                    <p>John D.</p>
-                    <p>⭐⭐⭐⭐⭐</p>
-                </div>
-                <p class="review-text">Brew Heaven's Velvet Sunrise Espresso impressed me with its bold flavor and impeccable preparation. Exceptional service and a passion for coffee make it a must-visit for coffee aficionados.</p>
-            </div><br><br>
-            <section class="additional-items">
-                <div class="item">
-                    <h1>Over 2,000</h1>
-                    <p>Satisfied Customers</p>
-                </div>
-                <div class="item">
-                    <h1>Exceeding 50,000</h1>
-                    <p>Coffee Cups Served</p>
-                </div>
-                <div class="item">
-                    <h1>Over 87%</h1>
-                    <p>Repeat Customers</p>
-                </div>
-                <div class="item">
-                    <h1>95%+</h1>
-                    <p>Five-Star Reviews</p>
-                </div>
-            </section>
-        </section>
-
-        <!-------------------------------Contact Us Section---------------------------->
-    <section id="contact">
-        <section class="contact">
-        <!-------------------------------Left Side - Contact Us------------------------------------>
-        <div class="left-side">
-            <h1>Contact Us</h1><br>
-            <h2>To Keep in Touch with Brew Heaven </h2><br>
-            <!-- Contact Items -->
-            <div class="contact-item">
-                <img src="telephone.png" alt="Phone Icon"><br>
-                <div>
-                    <h3>Phone</h3><br>
-                    <p>+91 123 456 7890</p>
-                </div>
-            </div>
-
-            <div class="contact-item">
-                <img src="gmail.png" alt="Email Icon"><br>
-                <div>
-                    <h3>Email</h3><br>
-                    <p>brewheaven@gmail.com</p>
-                </div>
-            </div>
-
-            <div class="contact-item">
-                <img src="google-maps.png" alt="Location Icon"><br>
-                <div>
-                    <h3>Location</h3><br>
-                    <p>123 Coffee Street, Brewville, CaffeineLand</p>
-                </div>
-            </div><br><br>
-
-            <!---------------------------------Follow Us---------------------------------->
-            <div class="follow-us">
-                <p>Follow us on:</p>
-                <!-- Social Icons -->
-                <div class="social-icons">
-                    <img src="facebook.png" alt="Facebook Icon">
-                    <img src="twitter.png" alt="Twitter Icon">
-                    <img src="instagram.png" alt="Instagram Icon">
-                    <img src="linkedin.png" alt="LinkedIn Icon">
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Side - Contact Form -->
-        <form action="submit_contact.php" method="POST">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-        
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="suggestions">Suggestions</label>
-            <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
-        
-            <label for="rating">Rating</label>
-            <div id="rating" class="rating-container">
-                <input type="radio" id="star5" name="rating" value="5" required>
-                <label for="star5">5 Stars</label>
-        
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4">4 Stars</label>
-        
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3">3 Stars</label>
-        
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2">2 Stars</label>
-        
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1">1 Star</label>
-            </div><br>
-        
-            <label for="overallExperience">Overall Experience:</label>
-            <select id="overallExperience" name="overallExperience">
-                <option value="excellent">Would Definitely Visit Again</option>
-                <option value="veryGood">Very Good</option>
-                <option value="good">Good</option>
-                <option value="fair">Fair</option>
-                <option value="poor">Needs Improvement</option>
-            </select>
-        
-            <button type="submit">Submit</button>
-        </form>
-        
-        </section>
-    </section><br>
-<footer class="site-footer">
-    <div class="container">
-        <div class="footer-widgets">
-            <div class="widget">
-                <h3><u>Explore</u></h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="widget">
-                <h3><u>Connect</u></h3>
-                <ul>
-                    <li><a href="#" id="newsletter">Subscribe to Newsletter</a></li>
-                    <li><a href="#" id="social-media">Follow Us on Social Media</a></li>
-                    <li><a href="#" id="events">Coffee Events Calendar</a></li>
-                </ul>
-            </div>
-            <div class="widget">
-                <h3><u>Shop</u></h3>
-                <ul>
-                    <li><a href="#">Coffee Subscriptions</a></li>
-                    <li><a href="#">Merchandise</a></li>
-                    <li><a href="#">Brewing Equipment</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-info">
-            <p>&copy; 2023 Brew Heaven. All rights reserved.</p>
-            <div class="copyright-info">
-                <p>Designed and Developed with ❤️ by Brew Heaven</p>
-            </div>
-        </div>
-    </div>
-</footer>
-        <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
-
 </html>
-
-
-
