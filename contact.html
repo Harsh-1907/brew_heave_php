@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Brew Haven</title>
+    <meta name="description" content="Get in touch with Brew Haven through our contact form, email, phone, or by visiting our location.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://brew-heave-your-coffee-oasis.vercel.app/contact.html">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-874S1R5KXC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-874S1R5KXC');
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://harsh-1907.github.io/Brew-Heave-Your-Coffee-Oasis/logoo.png">
+</head>
+<body class="desc">
+    <div class="website-content">
+        <header>
+            <img src="logoo.png" alt="Brew Haven Logo" class="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <section class="contact">
+            <!-- Left Side - Contact Us -->
+            <div class="left-side">
+                <h1>Contact Us</h1><br>
+                <h2>To Keep in Touch with Brew Heaven </h2><br>
+                <!-- Contact Items -->
+                <div class="contact-item">
+                    <img src="telephone.png" alt="Phone Icon"><br>
+                    <div>
+                        <h3>Phone</h3><br>
+                        <p>+91 123 456 7890</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <img src="gmail.png" alt="Email Icon"><br>
+                    <div>
+                        <h3>Email</h3><br>
+                        <p>brewheaven@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <img src="google-maps.png" alt="Location Icon"><br>
+                    <div>
+                        <h3>Location</h3><br>
+                        <p>123 Coffee Street, Brewville, CaffeineLand</p>
+                    </div>
+                </div><br><br>
+                <!-- Follow Us -->
+                <div class="follow-us">
+                    <p>Follow us on:</p>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <img src="facebook.png" alt="Facebook Icon">
+                        <img src="twitter.png" alt="Twitter Icon">
+                        <img src="instagram.png" alt="Instagram Icon">
+                        <img src="linkedin.png" alt="LinkedIn Icon">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Contact Form -->
+            <form action="submit_contact.php" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="suggestions">Suggestions</label>
+                <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
+            
+                <label for="rating">Rating</label>
+                <div id="rating" class="rating-container">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">5 Stars</label>
+            
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">4 Stars</label>
+            
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">3 Stars</label>
+            
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">2 Stars</label>
+            
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">1 Star</label>
+                </div><br>
+            
+                <label for="overallExperience">Overall Experience:</label>
+                <select id="overallExperience" name="overallExperience">
+                    <option value="excellent">Would Definitely Visit Again</option>
+                    <option value="veryGood">Very Good</option>
+                    <option value="good">Good</option>
+                    <option value="fair">Fair</option>
+                    <option value="poor">Needs Improvement</option>
+                </select>
+            
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </section><br>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="widget">
+                    <h3><u>Explore</u></h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3><u>Connect</u></h3>
+                    <ul>
+                        <li><a href="#" id="newsletter">Subscribe to Newsletter</a></li>
+                        <li><a href="#" id="social-media">Follow Us on Social Media</a></li>
+                        <li><a href="#" id="events">Coffee Events Calendar</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3><u>Shop</u></h3>
+                    <ul>
+                        <li><a href="#">Coffee Subscriptions</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Brewing Equipment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2023 Brew Heaven. All rights reserved.</p>
+                <div class="copyright-info">
+                    <p>Designed and Developed with ❤️ by Brew Heaven</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
